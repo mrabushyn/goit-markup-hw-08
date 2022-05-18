@@ -1,0 +1,123 @@
+.footer-section {
+    background: #2f303a;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.footer-contacts-link {
+    font-weight: 400;
+    line-height: 1.71;
+    text-decoration-line: none;
+    font-style: normal;
+    letter-spacing: 0.03em;
+    color: var(--light-color);
+    opacity: 60%;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        color: var(--brend-color);
+        opacity: 100%;
+    }
+}
+
+.footer-logo {
+    margin-bottom: 20px;
+}
+
+.footer-list :not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.contacts-addres {
+    color: var(--light-color);
+    opacity: 100%;
+}
+
+.footer-padding {
+    padding-top: 15px;
+    padding-bottom: 37px;
+}
+
+.footer-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--light-color);
+    margin-bottom: 20px;
+}
+
+.footer-soc-item {
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:not(:last-child) {
+        margin-right: 10px;
+    }
+    &:hover,
+    &:focus {
+        background-color: var(--brend-color);
+    }
+}
+
+.footer-soc-icon {
+    fill: var(--light-color);
+}
+
+.footer-sending {
+    right: 0px;
+}
+
+.fotter-input {
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: transparent;
+    margin-right: 12px;
+    padding-left: 16px;
+    color: var(--light-color);
+    outline: none;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        cursor: pointer;
+        border: 1px solid #2196f3;
+    }
+}
+
+.footer-sendign-icon {
+    fill: var(--light-color);
+    margin-left: 10px;
+}
+
+.footer-sending-btn {
+    display: block;
+    width: 200px;
+    height: 50px;
+    background: var(--brend-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--light-color);
+    margin: 0 auto;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        background-color: var(--brand-bg-color);
+    }
+}

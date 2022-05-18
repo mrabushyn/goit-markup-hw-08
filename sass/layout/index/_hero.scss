@@ -1,0 +1,46 @@
+.hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    &__title {
+        max-width: 696px;
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.36;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--light-color);
+        margin: 0 auto 30px auto;
+    }
+    &__btn {
+        padding: 10px 32px;
+        background: var(--brend-color);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        border: none;
+        color: var(--light-color);
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.88;
+        display: block;
+        align-items: center;
+        letter-spacing: 0.06em;
+        cursor: pointer;
+        margin: auto;
+        transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover,
+        &:focus {
+            background-color: var(--brand-bg-color);
+        }
+    }
+}
+.bg-img {
+    max-width: 1600px;
+    background-image: linear-gradient(
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/fon-Img.jpg);
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
