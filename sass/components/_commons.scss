@@ -6,25 +6,22 @@
 
     @media screen and (min-width: 480px) {
         max-width: 480px;
-        padding-right: 15px;
-        padding-left: 15px;
+        
     }
     @media screen and (min-width: 768px) {
         max-width: 768px;
-        padding-right: 15px;
-        padding-left: 15px;
+        
     }
     @media screen and (min-width: 1200px) {
         max-width: 1200px;
-        padding-right: 15px;
-        padding-left: 15px;
+        
     }
 }
 
-// .section-padding {
-//     padding-top: var(--padding-94);
-//     padding-bottom: var(--padding-94);
-// }
+.section-padding {
+    padding-top: var(--padding-94);
+    padding-bottom: var(--padding-94);
+}
 
 .title {
     font-weight: 700;
