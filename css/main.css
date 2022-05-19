@@ -255,15 +255,16 @@ body {
 }
 
 .masters-container {
-  margin-left: -30px;
+  padding-right: 15px;
+  padding-left: 15px;
+  align-items: center;
 }
 
 .masters-photo {
-  flex-basis: calc(50% - 30px);
-  margin-left: var(--margin-30);
   background: var(--light-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  margin-bottom: 30px;
 }
 
 .masters-name {
@@ -758,16 +759,15 @@ body {
 }
 
 .container {
-  width: 1170px;
+  width: 100%;
   margin-right: 15px;
   margin-left: 15px;
   margin: 0 auto;
-  /* outline: 1px solid red; */
 }
-
-.section-padding {
-  padding-top: var(--padding-94);
-  padding-bottom: var(--padding-94);
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
 }
 
 .title {
@@ -778,13 +778,19 @@ body {
   letter-spacing: 0.03em;
   padding-bottom: 50px;
 }
+@media screen and (min-width: 480px) {
+  .title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 33px;
+    /* identical to box height */
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
+}
 
 .display-flex-center {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.margin-right:not(:last-child) {
-  margin-right: var(--margin-30);
 }/*# sourceMappingURL=main.css.map */
