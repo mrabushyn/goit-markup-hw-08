@@ -347,6 +347,15 @@ body {
   fill: var(--brend-color);
   border-color: var(--brend-color);
 }
+@media screen and (min-width: 320px) {
+  .client-soc-item {
+    max-width: 130px;
+    margin-bottom: 30px;
+  }
+  .client-soc-item:nth-child(2n+1) {
+    margin-right: 30px;
+  }
+}
 @media screen and (min-width: 480px) {
   .client-soc-item {
     max-width: 210px;
@@ -814,6 +823,11 @@ body {
   padding-right: 15px;
   padding-left: 15px;
   margin: 0 auto;
+}
+@media screen and (min-width: 320px) {
+  .container {
+    max-width: 320px;
+  }
 }
 @media screen and (min-width: 480px) {
   .container {
