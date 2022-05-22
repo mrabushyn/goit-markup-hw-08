@@ -1,7 +1,14 @@
+.offer__flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .offer {
     padding-top: 0px;
     &__img {
         flex-basis: calc(100% / 3);
+        margin-right: 30px;
     }
     &__wrap {
         position: relative;
@@ -18,5 +25,11 @@
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: var(--light-color);
+    }
+}
+
+.offer {
+    @media screen and (max-width: 1199px) {
+        display: none;
     }
 }

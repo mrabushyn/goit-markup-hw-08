@@ -139,8 +139,8 @@ body {
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.1923;
+  font-size: 24px;
+  line-height: 1.16666;
   letter-spacing: 0.03em;
   color: var(--brend-color);
   text-decoration-line: none;
@@ -153,6 +153,8 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .logo {
+    font-size: 26px;
+    line-height: 1.1923;
     margin-right: 93px;
   }
 }
@@ -237,11 +239,18 @@ body {
   color: var(--secondary-color);
 }
 
+.offer__flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .offer {
   padding-top: 0px;
 }
 .offer__img {
   flex-basis: 33.3333333333%;
+  margin-right: 30px;
 }
 .offer__wrap {
   position: relative;
@@ -258,6 +267,12 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--light-color);
+}
+
+@media screen and (max-width: 1199px) {
+  .offer {
+    display: none;
+  }
 }
 
 .masters {
@@ -538,11 +553,34 @@ body {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .container__tablet {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 55px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-content {
+    margin-right: 165px;
+  }
+}
+
 @media screen and (max-width: 1199px) {
   .footer-logo,
 .footer-list,
 .footer-padding {
     text-align: center;
+  }
+}
+
+.footer-logo {
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .footer-logo {
+    margin-right: 63px;
   }
 }
 
@@ -561,10 +599,6 @@ body {
   opacity: 100%;
 }
 
-.footer-logo {
-  margin-bottom: 20px;
-}
-
 .footer-list :not(:last-child) {
   margin-bottom: 9px;
 }
@@ -580,8 +614,14 @@ body {
 }
 
 .footer-padding {
-  padding-top: 15px;
+  padding-top: 12px;
   padding-bottom: 37px;
+}
+@media screen and (max-width: 1199px) {
+  .footer-padding {
+    padding-top: 5px;
+    padding-bottom: 0px;
+  }
 }
 @media screen and (max-width: 767px) {
   .footer-padding {
@@ -652,9 +692,16 @@ body {
     margin: 0 0 20px;
   }
 }
+@media screen and (min-width: 768px) {
+  .fotter-input {
+    width: 450px;
+    margin: 0 0 20px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .fotter-input {
     width: 358px;
+    margin-right: 12px;
   }
 }
 
