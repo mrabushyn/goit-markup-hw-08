@@ -6,7 +6,19 @@
     letter-spacing: 0.03em;
     color: var(--brend-color);
     text-decoration-line: none;
-    margin-right: 93px;
+    & {
+        @media screen and (min-width: 480px) {
+            margin: 0 auto;
+            text-align:center;
+        }
+    }
+
+    & {
+        @media screen and (min-width: 1200px) {
+            margin-right: 93px;
+        }
+    }
+
     &--black {
         color: var(--main-color);
     }
