@@ -166,19 +166,6 @@ body {
   margin-right: 0;
 }
 
-.hero {
-  padding-bottom: 200px;
-}
-@media screen and (max-width: 1199px) {
-  .hero {
-    position: relative;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .hero {
-    padding-top: 200px;
-  }
-}
 .hero__title {
   font-weight: 900;
   text-align: center;
@@ -189,7 +176,9 @@ body {
 }
 @media screen and (max-width: 1199px) {
   .hero__title {
-    position: absolute;
+    max-width: 360px;
+    font-size: 26px;
+    line-height: 1.62;
     top: 118px;
     left: 204px;
   }
@@ -197,15 +186,15 @@ body {
 @media screen and (max-width: 767px) {
   .hero__title {
     position: absolute;
+    max-width: 360px;
     top: 118px;
     left: 60px;
   }
 }
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 479px) {
   .hero__title {
-    max-width: 360px;
-    font-size: 26px;
-    line-height: 1.62;
+    top: 25%;
+    left: 0%;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -234,26 +223,37 @@ body {
 }
 @media screen and (max-width: 1199px) {
   .hero__btn {
-    position: absolute;
     top: 232px;
     left: 284px;
   }
 }
 @media screen and (max-width: 767px) {
   .hero__btn {
-    position: absolute;
     top: 232px;
     left: 140px;
+  }
+}
+@media screen and (max-width: 479px) {
+  .hero__btn {
+    top: 65%;
+    left: 20%;
   }
 }
 .hero__btn:hover, .hero__btn:focus {
   background-color: var(--brand-bg-color);
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .bg-img {
     max-width: 480px;
     height: 400px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/fon-Img_mob.jpg);
+    background-repeat: no-repeat;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 479px) {
+  .bg-img {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/fon-Img_mob.jpg);
     background-repeat: no-repeat;
     margin: 0 auto;
