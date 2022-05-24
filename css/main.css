@@ -51,12 +51,29 @@ body {
   padding-bottom: 0;
 }
 
-.header {
-  border-bottom: 1px solid #ececec;
-}
 .header__container {
   display: flex;
   align-items: center;
+  padding: 16px 15px;
+}
+
+.mob-menu {
+  border: none;
+  background: transparent;
+}
+
+.mob-menu__icon {
+  position: absolute;
+  right: 15px;
+  top: 22px;
+  align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .menu,
+.contacts__item {
+    display: none;
+  }
 }
 
 .menu__list {
@@ -144,19 +161,6 @@ body {
   letter-spacing: 0.03em;
   color: var(--brend-color);
   text-decoration-line: none;
-}
-@media screen and (min-width: 480px) {
-  .logo {
-    margin: 0 auto;
-    text-align: center;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .logo {
-    font-size: 26px;
-    line-height: 1.1923;
-    margin-right: 93px;
-  }
 }
 .logo--black {
   color: var(--main-color);
