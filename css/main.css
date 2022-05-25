@@ -618,6 +618,10 @@ body {
 
 .portfolio-filter__list {
   margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
 }
 
 .portfolio-filter__item:not(:last-child) {
