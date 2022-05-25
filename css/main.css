@@ -204,6 +204,36 @@ body {
   color: var(--brend-color);
 }
 
+.mob-menu__close-btn {
+  position: absolute;
+  top: 20px;
+  right: 22px;
+}
+
+.mob-menu {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  width: 100vw;
+  height: 100vh;
+  padding: 48px 40px;
+}
+.mob-menu__item {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.175;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+  text-align: start;
+  margin-bottom: 32px;
+}
+.mob-menu__link {
+  text-decoration: none;
+}
+
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
