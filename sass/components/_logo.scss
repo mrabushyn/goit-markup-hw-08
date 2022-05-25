@@ -7,8 +7,8 @@
     color: var(--brend-color);
     text-decoration-line: none;
 
-                // margin: 0 auto;
-            // text-align: center;
+    // margin: 0 auto;
+    // text-align: center;
     // & {
     //     @media screen and (min-width: 480px) {
     //         // margin: 0 auto;
@@ -24,11 +24,9 @@
     // }
     &--black {
         color: var(--main-color);
-        
     }
     &--white {
         color: var(--light-color);
         margin-right: 0;
     }
 }
-
