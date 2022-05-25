@@ -29,17 +29,22 @@
                 <a class="logo" href="./index.html" lang="en"
                     >Web<span class="logo logo--black">Studio</span></a
                 >
+                <button type="button" class="mob-menu">
+                    <svg class="mob-menu__icon" width="24" height="16">
+                        <use href="images/symbol-defs.svg#icon-menu"></use>
+                    </svg>
+                </button>
                 <nav class="menu">
                     <ul class="menu__list lists">
                         <li class="menu__item">
                             <a
-                                class="menu__link"
+                                class="menu__link menu__link--current"
                                 href="./index.html"
                                 >Студия</a
                             >
                         </li>
                         <li class="menu__item">
-                            <a class="menu__link  menu__link--current" href="./portfolio.html"
+                            <a class="menu__link" href="./portfolio.html"
                                 >Портфолио</a
                             >
                         </li>
@@ -56,7 +61,20 @@
                             class="contacts__link"
                             href="mailto:info@devstudio.com"
                         >
-                            <svg class="contacts__icon" width="18" height="16">
+                            <svg
+                                class="contacts__icon contacts__icon--tab"
+                                width="16"
+                                height="14"
+                            >
+                                <use
+                                    href="./images/symbol-defs.svg#icon-massege"
+                                ></use>
+                            </svg>
+                            <svg
+                                class="contacts__icon contacts__icon--desk"
+                                width="18"
+                                height="16"
+                            >
                                 <use
                                     href="./images/symbol-defs.svg#icon-massege"
                                 ></use>
@@ -66,7 +84,20 @@
                     </li>
                     <li class="contacts__item">
                         <a class="contacts__link" href="tel:+380961111111">
-                            <svg class="contacts__icon" width="16" height="16">
+                            <svg
+                                class="contacts__icon contacts__icon--tab"
+                                width="14"
+                                height="14"
+                            >
+                                <use
+                                    href="./images/symbol-defs.svg#icon-call"
+                                ></use>
+                            </svg>
+                            <svg
+                                class="contacts__icon contacts__icon--desk"
+                                width="16"
+                                height="16"
+                            >
                                 <use
                                     href="./images/symbol-defs.svg#icon-call"
                                 ></use>
@@ -79,47 +110,84 @@
         </header>
         <main>
             <!-- _________________________________________________FILTER BUTTONS _________________________________________________ -->
-            <section class="section-padding portfolio-filter">
+            <section class="portfolio-filter">
                 <h1 class="visibility-hidden">Портфолио</h1>
                 <div class="container">
                     <ul class="lists portfolio-filter__list">
                         <li class="portfolio-filter__item">
-                            <button type="button" class="portfolio-filter__button portfolio-filter__button--current">
+                            <button
+                                type="button"
+                                class="portfolio-filter__button portfolio-filter__button--current"
+                            >
                                 Все
                             </button>
                         </li>
                         <li class="portfolio-filter__item">
-                            <button type="button" class="portfolio-filter__button">
+                            <button
+                                type="button"
+                                class="portfolio-filter__button"
+                            >
                                 Веб-сайты
                             </button>
                         </li>
                         <li class="portfolio-filter__item">
-                            <button type="button" class="portfolio-filter__button">
+                            <button
+                                type="button"
+                                class="portfolio-filter__button"
+                            >
                                 Приложения
                             </button>
                         </li>
                         <li class="portfolio-filter__item">
-                            <button type="button" class="portfolio-filter__button">
+                            <button
+                                type="button"
+                                class="portfolio-filter__button"
+                            >
                                 Дизайн
                             </button>
                         </li>
                         <li class="portfolio-filter__item">
-                            <button type="button" class="portfolio-filter__button">
+                            <button
+                                type="button"
+                                class="portfolio-filter__button"
+                            >
                                 Маркетинг
                             </button>
                         </li>
                     </ul>
                     <!-- ___________________________________________________WORKS_________________________________________________ -->
-                    <ul class="lists portfolio portfolio-lists display-flex-center">
+                    <ul class="lists portfolio portfolio-lists">
                         <li class="portfolio__item">
                             <div class="portfolio__wrap">
-                                <img
-                                    class="portfolio__img"
-                                    src="./images/img20.jpg"
-                                    alt="Веб-сайт - Технокряк"
-                                    width="370"
-                                    height="294"
-                                />
+                                <picture>
+                                    <source
+                                        srcset="
+                                            ./images/img20.jpg 1x,
+                                            ./images/img20-2x.jpg 2x
+                                        "
+                                        media="(min-width:1200px)"
+                                    />
+                                    <source
+                                        srcset="
+                                            ./images/img20-tab-1x.jpg 1x,
+                                            ./images/img20-tab-2x.jpg 2x
+                                        "
+                                        media="(min-width:768px)"
+                                    />
+                                    <source
+                                        srcset="
+                                            ./images/img20-mob-1x.jpg 1x,
+                                            ./images/img20-mob-2x.jpg 2x
+                                        "
+                                        media="(min-width:320px)"
+                                    />
+                                    <img
+                                        class="portfolio__img"
+                                        src="./images/img20.jpg"
+                                        alt="Веб-сайт - Технокряк"
+                                    />
+                                </picture>
+
                                 <p class="portfolio__text">
                                     Ресурс предлагает комплексные предложения с
                                     разным уровнем функционала и сервисов. Все
@@ -135,13 +203,35 @@
                         </li>
                         <li class="portfolio__item">
                             <div class="portfolio__wrap">
-                                <img
-                                    class="portfolio__img"
-                                    src="./images/img21.jpg"
-                                    alt="Дизайн - Постер New Orlean vs Golden Star"
-                                    width="370"
-                                    height="294"
-                                />
+                                <picture>
+                                    <source
+                                        srcset="
+                                            ./images/img21.jpg 1x,
+                                            ./images/img21-2x.jpg 2x
+                                        "
+                                        media="(min-width:1200px)"
+                                    />
+                                    <source
+                                        srcset="
+                                            ./images/img21-tab-1x.jpg 1x,
+                                            ./images/img21-tab-2x.jpg 2x
+                                        "
+                                        media="(min-width:768px)"
+                                    />
+                                    <source
+                                        srcset="
+                                            ./images/img21-mob-1x.jpg 1x,
+                                            ./images/img21-mob-2x.jpg 2x
+                                        "
+                                        media="(min-width:320px)"
+                                    />
+                                    <img
+                                        class="portfolio__img"
+                                        src="./images/img21.jpg"
+                                        alt="Дизайн - Постер New Orlean vs Golden Star"
+                                    />
+                                </picture>
+
                                 <p class="portfolio__text">
                                     Lorem ipsum dolor sit amet, consectetur
                                     adipisicing elit. Dignissimos omnis,
@@ -162,13 +252,35 @@
                         </li>
                         <li class="portfolio__item">
                             <div class="portfolio__wrap">
-                                <img
-                                    class="portfolio__img"
-                                    src="./images/img22.jpg"
-                                    alt="Приложение - Ресторан Seafood"
-                                    width="370"
-                                    height="294"
-                                />
+                                <picture>
+                                    <source
+                                        srcset="
+                                            ./images/img22.jpg 1x,
+                                            ./images/img22-2x.jpg 2x
+                                        "
+                                        media="(min-width:1200px)"
+                                    />
+                                    <source
+                                        srcset="
+                                            ./images/img22-tab-1x.jpg 1x,
+                                            ./images/img22-tab-2x.jpg 2x
+                                        "
+                                        media="(min-width:768px)"
+                                    />
+                                    <source
+                                        srcset="
+                                            ./images/img22-mob-1x.jpg 1x,
+                                            ./images/img22-mob-2x.jpg 2x
+                                        "
+                                        media="(min-width:320px)"
+                                    />
+                                    <img
+                                        class="portfolio__img"
+                                        src="./images/img22.jpg"
+                                        alt="Приложение - Ресторан Seafood"
+                                    />
+                                </picture>
+
                                 <p class="portfolio__text">
                                     Lorem ipsum dolor sit amet, consectetur
                                     adipisicing elit. Dignissimos omnis,
@@ -186,13 +298,35 @@
                         </li>
                         <li class="portfolio__item">
                             <div class="portfolio__wrap">
-                                <img
-                                    class="portfolio__img"
-                                    src="./images/img23.jpg"
-                                    alt="Маркетинг - Проект Prime"
-                                    width="370"
-                                    height="294"
-                                />
+                                <picture>
+                                    <source
+                                        srcset="
+                                            ./images/img23.jpg 1x,
+                                            ./images/img23-2x.jpg 2x
+                                        "
+                                        media="(min-width:1200px)"
+                                    />
+                                    <source
+                                        srcset="
+                                            ./images/img23-tab-1x.jpg 1x,
+                                            ./images/img23-tab-2x.jpg 2x
+                                        "
+                                        media="(min-width:768px)"
+                                    />
+                                    <source
+                                        srcset="
+                                            ./images/img23-mob-1x.jpg 1x,
+                                            ./images/img23-mob-2x.jpg 2x
+                                        "
+                                        media="(min-width:320px)"
+                                    />
+                                    <img
+                                        class="portfolio__img"
+                                        src="./images/img23.jpg"
+                                        alt="Маркетинг - Проект Prime"
+                                    />
+                                </picture>
+
                                 <p class="portfolio__text">
                                     Lorem ipsum dolor sit amet, consectetur
                                     adipisicing elit. Dignissimos omnis,
@@ -210,13 +344,35 @@
                         </li>
                         <li class="portfolio__item">
                             <div class="portfolio__wrap">
-                                <img
-                                    class="portfolio__img"
-                                    src="./images/img24.jpg"
-                                    alt="Приложение - Проект Boxes"
-                                    width="370"
-                                    height="294"
-                                />
+                                <picture>
+                                    <source
+                                        srcset="
+                                            ./images/img24.jpg 1x,
+                                            ./images/img24-2x.jpg 2x
+                                        "
+                                        media="(min-width:1200px)"
+                                    />
+                                    <source
+                                        srcset="
+                                            ./images/img24-tab-1x.jpg 1x,
+                                            ./images/img24-tab-2x.jpg 2x
+                                        "
+                                        media="(min-width:768px)"
+                                    />
+                                    <source
+                                        srcset="
+                                            ./images/img24-mob-1x.jpg 1x,
+                                            ./images/img24-mob-2x.jpg 2x
+                                        "
+                                        media="(min-width:320px)"
+                                    />
+                                    <img
+                                        class="portfolio__img"
+                                        src="./images/img24.jpg"
+                                        alt="Приложение - Проект Boxes"
+                                    />
+                                </picture>
+
                                 <p class="portfolio__text">
                                     Lorem ipsum dolor sit amet, consectetur
                                     adipisicing elit. Dignissimos omnis,
@@ -234,13 +390,35 @@
                         </li>
                         <li class="portfolio__item">
                             <div class="portfolio__wrap">
-                                <img
-                                    class="portfolio__img"
-                                    src="./images/img25.jpg"
-                                    alt="Веб-сайт - Inspiration has no Borders"
-                                    width="370"
-                                    height="294"
-                                />
+                                <picture>
+                                    <source
+                                        srcset="
+                                            ./images/img25.jpg 1x,
+                                            ./images/img25-2x.jpg 2x
+                                        "
+                                        media="(min-width:1200px)"
+                                    />
+                                    <source
+                                        srcset="
+                                            ./images/img25-tab-1x.jpg 1x,
+                                            ./images/img25-tab-2x.jpg 2x
+                                        "
+                                        media="(min-width:768px)"
+                                    />
+                                    <source
+                                        srcset="
+                                            ./images/img25-mob-1x.jpg 1x,
+                                            ./images/img25-mob-2x.jpg 2x
+                                        "
+                                        media="(min-width:320px)"
+                                    />
+                                    <img
+                                        class="portfolio__img"
+                                        src="./images/img25.jpg"
+                                        alt="Веб-сайт - Inspiration has no Borders"
+                                    />
+                                </picture>
+
                                 <p class="portfolio__text">
                                     Lorem ipsum dolor sit amet, consectetur
                                     adipisicing elit. Dignissimos omnis,
@@ -258,13 +436,35 @@
                         </li>
                         <li class="portfolio__item">
                             <div class="portfolio__wrap">
-                                <img
-                                    class="portfolio__img"
-                                    src="./images/img26.jpg"
-                                    alt="Дизайн - Издание Limited Edition"
-                                    width="370"
-                                    height="294"
-                                />
+                                <picture>
+                                    <source
+                                        srcset="
+                                            ./images/img26.jpg 1x,
+                                            ./images/img26-2x.jpg 2x
+                                        "
+                                        media="(min-width:1200px)"
+                                    />
+                                    <source
+                                        srcset="
+                                            ./images/img26-tab-1x.jpg 1x,
+                                            ./images/img26-tab-2x.jpg 2x
+                                        "
+                                        media="(min-width:768px)"
+                                    />
+                                    <source
+                                        srcset="
+                                            ./images/img26-mob-1x.jpg 1x,
+                                            ./images/img26-mob-2x.jpg 2x
+                                        "
+                                        media="(min-width:320px)"
+                                    />
+                                    <img
+                                        class="portfolio__img"
+                                        src="./images/img26.jpg"
+                                        alt="Дизайн - Издание Limited Edition"
+                                    />
+                                </picture>
+
                                 <p class="portfolio__text">
                                     Lorem ipsum dolor sit amet, consectetur
                                     adipisicing elit. Dignissimos omnis,
@@ -283,13 +483,35 @@
                         </li>
                         <li class="portfolio__item">
                             <div class="portfolio__wrap">
-                                <img
-                                    class="portfolio__img"
-                                    src="./images/img27.jpg"
-                                    alt="Маркетинг - Проект LAB"
-                                    width="370"
-                                    height="294"
-                                />
+                                <picture>
+                                    <source
+                                        srcset="
+                                            ./images/img27.jpg 1x,
+                                            ./images/img27-2x.jpg 2x
+                                        "
+                                        media="(min-width:1200px)"
+                                    />
+                                    <source
+                                        srcset="
+                                            ./images/img27-tab-1x.jpg 1x,
+                                            ./images/img27-tab-2x.jpg 2x
+                                        "
+                                        media="(min-width:768px)"
+                                    />
+                                    <source
+                                        srcset="
+                                            ./images/img27-mob-1x.jpg 1x,
+                                            ./images/img27-mob-2x.jpg 2x
+                                        "
+                                        media="(min-width:320px)"
+                                    />
+                                    <img
+                                        class="portfolio__img"
+                                        src="./images/img27.jpg"
+                                        alt="Маркетинг - Проект LAB"
+                                    />
+                                </picture>
+
                                 <p class="portfolio__text">
                                     Lorem ipsum dolor sit amet, consectetur
                                     adipisicing elit. Dignissimos omnis,
@@ -307,13 +529,35 @@
                         </li>
                         <li class="portfolio__item">
                             <div class="portfolio__wrap">
-                                <img
-                                    class="portfolio__img"
-                                    src="./images/img28.jpg"
-                                    alt="Приложение - Growing Business"
-                                    width="370"
-                                    height="294"
-                                />
+                                <picture>
+                                    <source
+                                        srcset="
+                                            ./images/img28.jpg 1x,
+                                            ./images/img28-2x.jpg 2x
+                                        "
+                                        media="(min-width:1200px)"
+                                    />
+                                    <source
+                                        srcset="
+                                            ./images/img28-tab-1x.jpg 1x,
+                                            ./images/img28-tab-2x.jpg 2x
+                                        "
+                                        media="(min-width:768px)"
+                                    />
+                                    <source
+                                        srcset="
+                                            ./images/img28-mob-1x.jpg 1x,
+                                            ./images/img28-mob-2x.jpg 2x
+                                        "
+                                        media="(min-width:320px)"
+                                    />
+                                    <img
+                                        class="portfolio__img"
+                                        src="./images/img28.jpg"
+                                        alt="Приложение - Growing Business"
+                                    />
+                                </picture>
+
                                 <p class="portfolio__text">
                                     Lorem ipsum dolor sit amet, consectetur
                                     adipisicing elit. Dignissimos omnis,
@@ -333,108 +577,139 @@
                 </div>
             </section>
             <!-- _________________________________________________PF FOOTER_________________________________________________ -->
-        <footer class="footer-section">
-            <div class="container">
-                <div class="footer-content">
-                    <div class="footer-logo">
-                        <a class="logo" href="./index.html" lang="en"
-                            >Web<span class="logo logo--white">Studio</span>
-                        </a>
-                    </div>
-                    <address id="contacts-main">
-                        <ul class="lists footer-list">
-                            <li>
-                                <a
-                                    class="footer-contacts-link contacts-addres"
-                                    href="https://goo.gl/maps/7gqZhrJQwjtrRqGAA"
-                                    target="_blank"
-                                    rel="noopener noindex nofollow"
-                                    >г. Киев, пр-т Леси Украинки, 26</a
-                                >
-                            </li>
-                            <li>
-                                <a
-                                    class="footer-contacts-link"
-                                    href="mailto:info@devstudio.com"
-                                    >info@devstudio.com</a
-                                >
-                            </li>
-                            <li>
-                                <a
-                                    class="footer-contacts-link"
-                                    href="tel:+380991111111"
-                                    >+38 099 111 11 11</a
-                                >
-                            </li>
-                        </ul>
-                    </address>
-                </div>
-                <div class="footer-padding">
-                    <h3 class="footer-title">присоединяйтесь</h3>
-                    <ul class="display-flex-center">
-                        <li class="footer-soc-item display-flex-center lists">
-                            <svg class="footer-soc-icon" width="20" height="20">
-                                <use
-                                    href="images/symbol-defs.svg#icon-instagram"
-                                ></use>
-                            </svg>
-                        </li>
-                        <li class="footer-soc-item display-flex-center lists">
-                            <svg class="footer-soc-icon" width="20" height="20">
-                                <use
-                                    href="images/symbol-defs.svg#icon-twitter"
-                                ></use>
-                            </svg>
-                        </li>
-                        <li class="footer-soc-item display-flex-center lists">
-                            <svg class="footer-soc-icon" width="20" height="20">
-                                <use
-                                    href="images/symbol-defs.svg#icon-facebook"
-                                ></use>
-                            </svg>
-                        </li>
-                        <li class="footer-soc-item display-flex-center lists">
-                            <svg class="footer-soc-icon" width="20" height="20">
-                                <use
-                                    href="images/symbol-defs.svg#icon-linkedin"
-                                ></use>
-                            </svg>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer-sending footer-padding">
-                    <p class="footer-title">Подпишитесь на рассылку</p>
-                    <form class="footer-input-form">
-                        <div class="display-flex-center">
-                            <label
-                                for="sending-mail"
-                                class="fotter-label"
-                            ></label>
-                            <input
-                                type="email"
-                                class="fotter-input"
-                                name="sending mail"
-                                title="Введите Ваш E-mail"
-                                id="sending-mail"
-                                placeholder="E-mail"
-                            />
-                            <button class="footer-sending-btn display-flex-center" type="submit">
-                                Подписаться
-                                <svg
-                                    class="footer-sendign-icon"
-                                    width="24"
-                                    height="24"
-                                >
-                                    <use
-                                        href="images/symbol-defs.svg#icon-send"
-                                    ></use>
-                                </svg>
-                            </button>
+            <footer class="footer-section">
+                <div class="container">
+                    <div class="container__tablet">
+                        <div class="footer-content">
+                            <div class="footer-logo">
+                                <a class="logo" href="./index.html" lang="en"
+                                    >Web<span class="logo logo--white"
+                                        >Studio</span
+                                    >
+                                </a>
+                            </div>
+                            <address id="contacts-main">
+                                <ul class="lists footer-list">
+                                    <li>
+                                        <a
+                                            class="footer-contacts-link contacts-addres"
+                                            href="https://goo.gl/maps/7gqZhrJQwjtrRqGAA"
+                                            target="_blank"
+                                            rel="noopener noindex nofollow"
+                                            >г. Киев, пр-т Леси Украинки, 26</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="footer-contacts-link"
+                                            href="mailto:info@devstudio.com"
+                                            >info@devstudio.com</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="footer-contacts-link"
+                                            href="tel:+380991111111"
+                                            >+38 099 111 11 11</a
+                                        >
+                                    </li>
+                                </ul>
+                            </address>
                         </div>
-                    </form>
+                        <div class="footer-padding">
+                            <h3 class="footer-title">присоединяйтесь</h3>
+                            <ul class="display-flex-center">
+                                <li
+                                    class="footer-soc-item display-flex-center lists"
+                                >
+                                    <svg
+                                        class="footer-soc-icon"
+                                        width="20"
+                                        height="20"
+                                    >
+                                        <use
+                                            href="images/symbol-defs.svg#icon-instagram"
+                                        ></use>
+                                    </svg>
+                                </li>
+                                <li
+                                    class="footer-soc-item display-flex-center lists"
+                                >
+                                    <svg
+                                        class="footer-soc-icon"
+                                        width="20"
+                                        height="20"
+                                    >
+                                        <use
+                                            href="images/symbol-defs.svg#icon-twitter"
+                                        ></use>
+                                    </svg>
+                                </li>
+                                <li
+                                    class="footer-soc-item display-flex-center lists"
+                                >
+                                    <svg
+                                        class="footer-soc-icon"
+                                        width="20"
+                                        height="20"
+                                    >
+                                        <use
+                                            href="images/symbol-defs.svg#icon-facebook"
+                                        ></use>
+                                    </svg>
+                                </li>
+                                <li
+                                    class="footer-soc-item display-flex-center lists"
+                                >
+                                    <svg
+                                        class="footer-soc-icon"
+                                        width="20"
+                                        height="20"
+                                    >
+                                        <use
+                                            href="images/symbol-defs.svg#icon-linkedin"
+                                        ></use>
+                                    </svg>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-sending footer-padding">
+                        <p class="footer-title">Подпишитесь на рассылку</p>
+                        <form class="footer-input-form">
+                            <div class="footer-input-form__flex">
+                                <label
+                                    for="sending-mail"
+                                    class="fotter-label"
+                                ></label>
+                                <input
+                                    type="email"
+                                    class="fotter-input"
+                                    name="sending mail"
+                                    title="Введите Ваш E-mail"
+                                    id="sending-mail"
+                                    placeholder="E-mail"
+                                />
+                                <button
+                                    class="footer-sending-btn display-flex-center"
+                                    type="submit"
+                                >
+                                    Подписаться
+                                    <svg
+                                        class="footer-sendign-icon"
+                                        width="24"
+                                        height="24"
+                                    >
+                                        <use
+                                            href="images/symbol-defs.svg#icon-send"
+                                        ></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-            </div>
-        </footer>
+            </footer>
         </main>
     </body>
 </html>
