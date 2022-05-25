@@ -6,24 +6,23 @@
     letter-spacing: 0.03em;
     color: var(--brend-color);
     text-decoration-line: none;
-
-    // margin: 0 auto;
-    // text-align: center;
-    // & {
-    //     @media screen and (min-width: 480px) {
-    //         // margin: 0 auto;
-    //         // text-align: center;
-    //     }
-    // }
-    // & {
-    //     @media screen and (min-width: 1200px) {
-    //         font-size: 26px;
-    //         line-height: 1.1923;
-    //         margin-right: 93px;
-    //     }
-    // }
+    & {
+        @media screen and (min-width: 480px) {
+            // margin: 0 auto;
+            text-align: center;
+        }
+    }
+    & {
+        @media screen and (min-width: 1200px) {
+            font-size: 26px;
+            line-height: 1.1923;
+        }
+    }
     &--black {
         color: var(--main-color);
+        @media screen and (min-width: 1200px) {
+            margin-right: 93px;
+        }
     }
     &--white {
         color: var(--light-color);

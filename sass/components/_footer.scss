@@ -35,10 +35,12 @@
 
 .footer-logo {
     margin-bottom: 20px;
-    &{ @media screen and (min-width: 1200px) {
-        margin-right: 63px;
+    & {
+        @media screen and (min-width: 1200px) {
+            margin-right: 63px;
+        }
     }
-}}
+}
 
 .footer-contacts-link {
     font-weight: 400;
@@ -72,7 +74,7 @@
 
 .footer-padding {
     padding-top: 12px;
-    
+
     & {
         @media screen and (max-width: 1199px) {
             padding-top: 5px;
@@ -83,6 +85,11 @@
         @media screen and (max-width: 767px) {
             padding-top: 60px;
             padding-bottom: 0px;
+        }
+    }
+    & {
+        @media screen and (min-width: 1200px) {
+            margin-left: 70px;
         }
     }
 }
