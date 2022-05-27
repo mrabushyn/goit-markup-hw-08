@@ -11,7 +11,7 @@
     }
 }
 
-.mob-menu {
+.menu-open-btn {
     @media screen and (max-width: 1199px) {
         border: none;
         background: transparent;
@@ -144,10 +144,12 @@
     color: var(--brend-color);
 }
 
-.mob-menu__close-btn {
+.menu-close-btn {
     position: absolute;
     top: 20px;
     right: 22px;
+    border: none;
+    background-color: transparent;
 }
 
 .mob-menu__flex {
@@ -166,9 +168,9 @@
     width: 100vw;
     height: 100vh;
     padding: 48px 40px;
-    overflow-y: auto;
     .container {
         height: 100%;
+        overflow-y: auto;
     }
     &__item {
         text-align: start;
@@ -240,4 +242,8 @@
         letter-spacing: 0.02em;
         color: #757575;
     }
+}
+
+.no-scroll {
+    overflow: hidden;
 }
