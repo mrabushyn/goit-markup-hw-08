@@ -36,6 +36,10 @@
     @media screen and (max-width: 480px) {
         overflow-y: auto;
     }
+    @media screen and (min-width: 1200px) {
+        max-width: 528px;
+        height: 581px;
+    }
 }
 
 .modal-close-btn {
@@ -72,11 +76,13 @@
     font-weight: 700;
     font-size: 20px;
     line-height: 1.5;
-    // line-height: 23px;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--main-color);
     margin-bottom: 12px;
+    @media screen and (min-width: 1200px) {
+        line-height: calc(23 / 20);
+    }
 }
 
 .modal-label {
@@ -115,7 +121,7 @@
         fill: #188ce8;
     }
     &:nth-child(5) {
-        margin-top: 10px;
+        margin-top: 16px;
         margin-bottom: 30px;
     }
     &:nth-child(5) :hover {
@@ -200,6 +206,10 @@
     font-size: 12px;
     line-height: calc(14 / 12);
     letter-spacing: 0.03em;
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: calc(24 / 14);
+    }
 }
 
 .modal-check:checked + .icon-check {
