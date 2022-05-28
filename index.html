@@ -923,7 +923,6 @@
                 <p class="modal-title">
                     Оставьте свои данные, мы вам перезвоним
                 </p>
-
                 <form class="modal-input-form">
                     <div class="modal-field">
                         <label for="user-name" class="modal-label">Имя</label>
@@ -940,7 +939,6 @@
                             <use href="images/symbol-defs.svg#name-icon"></use>
                         </svg>
                     </div>
-
                     <div class="modal-field">
                         <label for="user-tel" class="modal-label"
                             >Телефон</label
@@ -961,7 +959,6 @@
                             <use href="images/symbol-defs.svg#tel-icon"></use>
                         </svg>
                     </div>
-
                     <div class="modal-field">
                         <label for="user-mail" class="modal-label">Почта</label>
                         <input
@@ -975,7 +972,6 @@
                             <use href="images/symbol-defs.svg#mail-icon"></use>
                         </svg>
                     </div>
-
                     <div class="modal-field">
                         <label for="user-text" class="modal-label"
                             >Комментарий</label
@@ -988,29 +984,22 @@
                             minlength="1"
                         ></textarea>
                     </div>
-
                     <div class="modal-field">
-                        <div class="check-reletive">
-                            <svg class="icon-check" width="15" height="10">
-                                <use
-                                    href="./images/symbol-defs.svg#icon-check"
-                                ></use>
-                            </svg>
+                        <label for="modal-check" class="modal-check-text">
                             <input
                                 type="checkbox"
-                                class="modal-check pf-hidden-title visibility-hidden"
+                                class="modal-check visibility-hidden"
                                 id="modal-check"
                                 name="policy"
                                 value="policy"
                                 required
                             />
-                            <label for="modal-check" class="modal-check-text"
-                                >Соглашаюсь с рассылкой и принимаю &nbsp;
-                                <a href="" class="modal-check-link">
-                                    Условия договора</a
-                                ></label
+                            <span class="icon-check"></span>
+                            Соглашаюсь с рассылкой и принимаю&nbsp;
+                            <a href="" class="modal-check-link">
+                                Условия договора</a
                             >
-                        </div>
+                        </label>
                     </div>
                     <button class="modal__btn" type="submit">Отправить</button>
                 </form>

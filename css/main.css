@@ -267,14 +267,12 @@ body {
   margin-top: 64px;
 }
 
-.mob-menu-soc__item {
-  margin-right: 20px;
+.mob-menu-soc__item:not(:first-child) {
+  margin-left: 20px;
   position: relative;
 }
 
-.mob-menu-soc__item:nth-child(3) + .mob-menu-soc__item::after,
-.mob-menu-soc__item:nth-child(2) + .mob-menu-soc__item::after,
-.mob-menu-soc__item:nth-child(1) + .mob-menu-soc__item::after {
+.mob-menu-soc__item:nth-child(1n+1) + .mob-menu-soc__item::before {
   content: "";
   position: absolute;
   bottom: 0px;
@@ -1095,7 +1093,6 @@ body {
   position: relative;
   max-width: 450px;
   height: 609px;
-  overflow-y: auto;
   background: var(--light-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -1104,6 +1101,17 @@ body {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transform: translate(-50%, -50%) scale(1);
   padding: 40px;
+}
+@media screen and (max-height: 609px) {
+  .modal {
+    height: 100%;
+    overflow-y: auto;
+  }
+}
+@media screen and (max-width: 480px) {
+  .modal {
+    overflow-y: auto;
+  }
 }
 
 .modal-close-btn {
@@ -1180,7 +1188,7 @@ body {
   fill: #188ce8;
 }
 .modal-field:nth-child(5) {
-  margin-top: 20px;
+  margin-top: 10px;
   margin-bottom: 30px;
 }
 .modal-field:nth-child(5) :hover {
@@ -1242,43 +1250,34 @@ body {
   background-color: var(--brand-bg-color);
 }
 
-.check-reletive {
-  position: relative;
-}
-
 .icon-check {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 12px;
-  fill: var(--light-color);
-}
-
-.modal-check {
-  background-color: var(--brand-color);
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  background: #ffffff;
+  border: 2px solid #000;
+  border-radius: 2px;
+  margin-right: 8px;
 }
 
 .modal-check-text {
-  color: var(--secondary-color);
-  font-size: 12px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
   display: flex;
   align-items: center;
-  justify-content: center;
+  flex-wrap: wrap;
+  color: var(--secondary-color);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.1666666667;
+  letter-spacing: 0.03em;
 }
 
-.modal-check-text::before {
-  content: "";
-  width: 16px;
-  height: 15px;
-  border: 2px solid #000000;
-  border-radius: 3px;
-  margin-right: 7px;
-}
-.modal-check:checked + .modal-check-text::before {
+.modal-check:checked + .icon-check {
   background-color: var(--brend-color);
-  border: none;
+  border-color: transparent;
+  background-image: url("../images/check.svg");
+  background-size: contain;
+  background-origin: border-box;
+  background-repeat: no-repeat;
 }
 
 .modal-check-link {

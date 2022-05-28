@@ -214,14 +214,12 @@
     margin-top: 64px;
 }
 
-.mob-menu-soc__item {
-    margin-right: 20px;
+.mob-menu-soc__item:not(:first-child) {
+    margin-left: 20px;
     position: relative;
 }
 
-.mob-menu-soc__item:nth-child(3) + .mob-menu-soc__item::after,
-.mob-menu-soc__item:nth-child(2) + .mob-menu-soc__item::after,
-.mob-menu-soc__item:nth-child(1) + .mob-menu-soc__item::after {
+.mob-menu-soc__item:nth-child(1n + 1) + .mob-menu-soc__item::before {
     content: "";
     position: absolute;
     bottom: 0px;
