@@ -16,6 +16,7 @@
 
     @media screen and (min-width: 768px) {
         max-width: 354px;
+
     }
     @media screen and (min-width: 1200px) {
         max-width: 270px;
@@ -39,15 +40,9 @@
     }
 }
 
-// .icon-photo__margin--bottom {
-//     @media screen and (min-width: 768px) {
-//         margin-bottom: 0px;
-//     }
-// }
-
-
 .masters-photo .photo {
     width: 100%;
+
 }
 
 .masters-name {
@@ -70,7 +65,7 @@
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--secondary-color);
-    margin-bottom: 16px;
+    // margin-bottom: 16px;
 }
 
 .masters-soc-item {
